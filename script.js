@@ -15,7 +15,7 @@ async function searchCountry(countryName) {
 
         // Fetch main country
         const response = await fetch(
-            `https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}`
+            `https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}?fullText=true`
         );
 
         if (!response.ok) {
