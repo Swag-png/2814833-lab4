@@ -52,10 +52,9 @@ async function searchCountry(countryName) {
             // Update bordering countries section
             borderContainer.innerHTML = borderCountries
                 .map(border => `
-                    <div class="country-card">
+                    
                         <h4>${border.name.common}</h4>
                         <img src="${border.flags.svg}" width="100">
-                    </div>
                 `)
                 .join("");
         }
